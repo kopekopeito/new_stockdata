@@ -27,11 +27,11 @@ jobs:
 
       # 問題点1の修正: 正しいファイル名に変更
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r new_requirements.txt
 
       # 問題点1の修正: 正しいファイル名に変更
       - name: Run script to update data
-        run: python main.py
+        run: python new_main.py
 
       - name: Commit and push if there are changes
         uses: stefanzweifel/git-auto-commit-action@v5
